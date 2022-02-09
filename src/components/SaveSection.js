@@ -25,7 +25,7 @@ const theme = createTheme({
 const SaveSection = () => {
   return (
  
-    <Container style={{ marginTop: "50px" }}>
+    <Container style={{ marginTop: "30px" }}>
       <Grid container>
         <Grid xs={12}>
           <div className="save-flex">

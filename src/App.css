@@ -216,6 +216,86 @@ p{
 .slick-list{
   padding: 0px;
 }
+.slide-div{
+ 
+  
+  overflow: hidden;
+}
+
+.slider-shadow{
+  box-shadow:0 4px 8px rgba(10,9,9,.1);
+  border-radius: 8px;
+}
+ 
+.img-div{
+  height: 160px;
+  max-width: 128px;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+.slide-img2{
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out; 
+}
+
+.slide-img2:hover{
+   transform: scale(1.06);
+}
+
+
+
+.dots div{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #1882ff;
+  opacity: 0.5;
+  margin: 0 2px;
+}
+
+ul.slick-dots{
+  right: 30px;
+  left: auto;
+  width: auto;
+  bottom: 10px;
+}
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "\2022";
+  text-align: center;
+  opacity: .25;
+  color:#679be9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 0px;
+  padding: 0;
+}
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #1F71EB;
+}
+
+
 
 
 
