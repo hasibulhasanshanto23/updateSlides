@@ -60,7 +60,7 @@ body{
   cursor: pointer;
 }
 
-
+/* 
 /*********save section********/
 
 .save-flex{
@@ -68,8 +68,9 @@ body{
   flex-direction: row;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(10,9,9,.1);
-  border-radius: 6px;
+  border-radius: 8px;
   justify-content: space-between;
+  overflow: hidden;
 }
 .image-content{
   display: flex;
@@ -80,19 +81,21 @@ body{
 .input-button-group{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items:flex-end
 }
 .input-button{
   display: flex;
   flex-direction: row;
   align-items:center;  
-  padding-top: 30px;
+  padding-top: 25px;
 }
 .image-content .group-image{
-  padding: 32px;
+  padding: 25px;
 }
 .save-p{
-  padding: 32px 0;
+  padding: 25px 0;
+  padding-right: 25px;
 }
 .save-heading{
   font-weight: 600;
@@ -230,6 +233,7 @@ p{
 .img-div{
   height: 160px;
   max-width: 128px;
+  min-width: 128px;
   width: 100%;
   display: flex;
   border-radius: 8px;
@@ -294,6 +298,85 @@ ul.slick-dots{
   opacity: .75;
   color: #1F71EB;
 }
+
+.slider-item{
+  margin: 20px;
+}
+
+
+
+.box{
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(10,9,9,.1);
+  border-radius: 8px;
+}
+
+
+
+/********** MEDIA QUERY *********/
+
+@media  screen and (max-width:1175px) {
+  .about-flight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-direction:row;
+  }
+  
+  .content-div{
+    margin-top: 10px;
+  }
+  .image-div{
+      padding:15px 20px;
+      margin-top: 18px;
+      }
+      .full-width{  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+
+  @media screen and (max-width:799px){
+    .content-div{
+      margin: 5px auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+
+  @media screen and (max-width:767px){
+  .subs-button{
+    padding: 12px 15px !important;
+  }
+  }
+
+  @media screen and (max-width:400px){
+    .subs-button{
+      padding: 12px 6px !important;
+      font-size: 10px !important;
+    }
+    }
+
+    @media screen and (max-width:600px){
+     .test{
+       display: flex;
+       flex-direction: column;
+     }
+     .test2{
+       margin-bottom: 30px;
+     }
+     .email-input{
+       margin: 0 6px;
+     }
+      }
+
+
 
 
 

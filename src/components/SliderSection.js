@@ -23,8 +23,8 @@ const SliderSection = () => {
 
   return (
     <Container style={{ marginTop: "30px" }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md:2}}>
-       <Grid item xs={4}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md:2}} style={{margin:'0 auto'}}>
+       <Grid item xs={12} sm={6} md={4} >
            <div className="slider-shadow">
            <Slider {...settings}>
              <div className="slide-div d-flex align-items-center ">
@@ -69,7 +69,7 @@ const SliderSection = () => {
 
         
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
            <div className="slider-shadow">
            <Slider {...settings}>
              <div className="slide-div d-flex align-items-center ">
@@ -114,7 +114,7 @@ const SliderSection = () => {
 
 
 
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
            <div className="slider-shadow">
            <Slider {...settings}>
              <div className="slide-div d-flex align-items-center ">

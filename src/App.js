@@ -4,17 +4,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import AboutFlight from './components/AboutFlight'
 import SliderSection from './components/SliderSection';
- import SaveSection from './components/SaveSection.js'
- import PackageDeals from './components/PackageDeals.js'
- import Deals from './components/Deals.js'
+import Deals from './components/Deals.js'
+import UpdateSave from './components/UpdateSave'
 
 function App() {
   return (
-    <div >
+    <div>
      <AboutFlight/>
      <SliderSection/>
-     <SaveSection/>
-     {/* <PackageDeals/> */}
+     <UpdateSave/>
      <Deals/>
     </div>
   );

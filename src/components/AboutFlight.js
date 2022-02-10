@@ -64,7 +64,7 @@ const AboutFlight = () => {
           </div>
         </div>
 
-        <div className='content-div'>
+        <div className='content-div full-width'>
          <div className='image-div'>
             <img src={travel} alt="track-flight" className='flight-img2' />
           </div>
