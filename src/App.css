@@ -392,6 +392,8 @@ ul.slick-dots{
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.92) 100%);
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.11);
         border-radius: 8px;
+        width: 92%;
+        margin: auto;
       }
 
       .MuiAppBar-root {
@@ -404,12 +406,13 @@ ul.slick-dots{
       min-width: 98px !important;
       font-weight: 400;
       padding: 16px 20px;
+      text-transform:capitalize !important;
 
     }
     .MuiTab-labelIcon{
       min-height: 22px;
       display: flex !important;
-      flex-direction: row !important;   
+      flex-direction: row !important;  
   }
   
 
@@ -422,13 +425,12 @@ ul.slick-dots{
 
     .MuiButtonBase-root {
       z-index: 2;
-      min-height: 52px;
+      min-height: 50px !important;
       flex-grow: 1;
       max-width: 100%;
       min-width: auto;
       font-size: 15px;
       font-weight: 500;
-
     }
 
     .MuiButtonBase-root {
@@ -439,6 +441,12 @@ ul.slick-dots{
       display: flex;
       justify-content: center;
       align-items: center;
+      
+  }
+
+  .MuiButtonBase-root img{
+      margin-right: 20px;
+      margin-top: 3px;
   }
 
   .MuiIconButton-label {
@@ -448,13 +456,15 @@ ul.slick-dots{
 }
 
     .Mui-selected {
-      font-weight: 600;   
+      font-weight: 600 !important; 
+      color: #000000 !important;
+      background-color: #ffd321 !important;  
      }
 
   .Mui-selected img {
     filter: brightness(0) !important;
    }
-
+   
    .MuiTab-wrapper{
     display: flex ;
     flex-direction: row ;
@@ -473,7 +483,6 @@ ul.slick-dots{
   }
 
   .MuiTabs-indicator {
-    background-color: #ffd321;
     height: 100%;
     left: 0;
     width: 20%;
