@@ -507,7 +507,7 @@ input[type=text] {
   outline: none;
   width: 100%;
   font-weight: 500;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   color: #000000;
 }
 
@@ -527,6 +527,7 @@ input[type=text] {
   border: 1px solid #E2E2E8;
   border-radius:4px ;
 }
+
 .myInput{
   height: 30px;
 }
@@ -552,6 +553,46 @@ input[type=text] {
   color: #fff;
   background-color:#EB5D17 ;
 }
+
+
+/**********holiday***********/
+
+.add-city-btn{
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px 16px;
+  background-color:#DCECFF ;
+  color: #1882FF;
+  font-weight: 500;
+  border: 1px solid #C8E1FF;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-city-btn:hover{
+  border: 1px solid #1882FF;
+  color: #1882FF;
+  background-color:#eff5fc ;
+}
+
+.placeholder-text input::placeholder{
+  color: #000000;
+  opacity:1;
+}
+
+/*calender-style*/
+
+.CalendarDay__selected{
+  background-color: #1882FF !important;
+}
+.DayPickerKeyboardShortcuts_show__bottomRight::before {
+  border-top: 26px solid transparent;
+  border-right: 29px solid #1882FF !important;
+  bottom: 0;
+  right: 0;
+}
+
+
 
 
 

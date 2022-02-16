@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import { DateRangePicker,SingleDatePicker } from "react-dates";
+import moment from 'moment'
 
 
 class DatePick extends Component{
@@ -7,10 +8,15 @@ class DatePick extends Component{
         super(props)
         this.state={
             startDate:null,
-            endDate:null
-
+            endDate:null,
         }
+        this.date=moment().format("Do MMM YY");
+        this.state.startDate=moment().format("Do MMM YY")
+        this.state.endDate=moment().format("Do MMM YY")
+        console.log('date',this.state.startDate) 
     }
+
+    
 
     render(){
         return(
@@ -36,13 +42,12 @@ class DatePick extends Component{
         //   />
 
         <SingleDatePicker
-            date={this.state.date} // momentPropTypes.momentObj or null
-            onDateChange={date => this.setState({ date })} // PropTypes.func.isRequired
-            focused={this.state.focused} // PropTypes.bool
-            onFocusChange={({ focused }) => this.setState({ focused })} // PropTypes.func.isRequired
-            id="your_unique_id" // PropTypes.string.isRequired,
+            date={this.state.date} 
+            onDateChange={date => this.setState({ date })}
+            focused={this.state.focused} 
+            onFocusChange={({ focused }) => this.setState({ focused })}
             noBorder
-            
+            placeholder={this.date}           
 />
         )
     }
