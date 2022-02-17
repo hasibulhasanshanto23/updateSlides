@@ -6,6 +6,7 @@ import SliderSection from './components/SliderSection';
 import Deals from './components/Deals.js'
 import UpdateSave from './components/UpdateSave'
 import HomeSearchPanel from './components/HomeSearchPanel';
+import Hotel from './components/Hotel'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <UpdateSave/>
      <Deals/> */}
      <HomeSearchPanel/>
+     {/* <Hotel/> */}
     </div>
   );
 }

@@ -592,6 +592,36 @@ input[type=text] {
   right: 0;
 }
 
+/******visa*****/
+
+.country select {
+  appearance: none;
+  border: none;
+  outline: none;
+}
+.MuiPaper-root{
+  box-shadow: none !important;
+}
+.popover2{
+  background-color:#EFEFF4 ;
+}
+p{
+  margin: 0;
+}
+.pop-hover:hover{
+  color: #1882FF;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
